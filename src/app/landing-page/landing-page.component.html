@@ -1,0 +1,205 @@
+<div *ngIf="renderingService.show">
+
+	<main class="footercta" role="main">
+	<div class="container">
+		<!-- 	<div class="logo"> -->
+		<!-- 		<h1>{{appName}}</h1> -->
+		<!-- 	</div> -->
+		<!-- 	<h2 translate="TAGLINE">Profitez des offres discount dans votre -->
+		<!-- 		magasin favori</h2> -->
+		<div class="row col-md-12 ">
+			<form class="form-horizontal" role="form" id="subscribeForm"
+				method="POST">
+				<div class="form-group">
+
+					<div class="col-md-6 col-md-offset-0">
+						<!--         <input placeholder="search for location" autocorrect="off" autocapitalize="off" spellcheck="off" type="text" class="form-control input-lg" #search [formControl]="searchControl"> -->
+						<!-- 						<input class="form-control input-lg" name="email" type="email" -->
+						<!-- 							id="address" placeholder="" -->
+						<!-- 							data-validate="validate(required, email)" required="required"> -->
+						<div>
+							<br />
+							<h1>En quelques clics,</h1>
+							<h1>venez chercher votre</h1>
+							<h1>commande de produits</h1>
+							<h1>destockés</h1>
+							<br />
+							<div class="sub_chapter">Courses Privées est une
+								application qui vous connecte aux offres exclusives de
+								l'hypermarché de votre choix afin d'acheter des produits de
+								marque, frais et de bonne qualité à prix réduits avec une date
+								de péremption proche !</div>
+						</div>
+
+					</div>
+
+
+
+					<div class="col-md-5  col-md-offset-1">
+						<!-- 						<button type="button" class="btn btn-lg">Trouvez un Deal</button> -->
+
+						<app-inscription-form></app-inscription-form>
+
+					</div>
+				</div>
+				<div class="alert-success" translate="message"></div>
+			</form>
+			<span id="result" class="alertMsg"></span>
+		</div>
+
+		<!-- 	<div class="container_logo home__teaser__app-logo-wrapper"> -->
+
+
+		<!-- 		<div> -->
+		<!-- 			<a class="home__teaser__app-logo" href="."> -->
+		<!-- 				<p translate="KNOW_MORE"></p> -->
+		<!-- 				<p> -->
+		<!-- 					<img class="home__teaser__app-logo-image" -->
+		<!-- 						src="assets/images/apple-store-white.png" alt="scroll down arrow"> -->
+		<!-- 				</p> -->
+		<!-- 			</a> -->
+		<!-- 		</div> -->
+		<!-- 		<div> -->
+		<!-- 			<a class="home__teaser__app-logo" href="."> -->
+		<!-- 				<p translate="KNOW_MORE"></p> -->
+		<!-- 				<p> -->
+		<!-- 					<img class="home__teaser__app-logo-image" -->
+		<!-- 						src="assets/images/google-play-white.png" alt="scroll down arrow"> -->
+		<!-- 				</p> -->
+		<!-- 			</a> -->
+		<!-- 		</div> -->
+		<!-- 	</div> -->
+
+
+
+		<!-- 		<a href="./#/#services" class="scrollto"> -->
+		<!-- 			<p translate="KNOW_MORE"></p> -->
+		<!-- 			<p class="scrollto--arrow"> -->
+		<!-- 				<img src="assets/images/scroll_down.png" alt="scroll down arrow"> -->
+		<!-- 			</p> -->
+		<!-- 		</a> -->
+	</div>
+	<! --/container --> </main>
+	<! --/main -->
+
+
+	<!-- ######################### SECTION COMMENT CA MARCHE -->
+	<div class="services" id="services">
+		<div class="container">
+			<div class="feat_margin"></div>
+			<div class="row">
+				<div class="col-md-10 center col-md-offset-1">
+					<div class="section-head wow fadeIn animated animated "
+						data-wow-offset="10" data-wow-duration="1.5s"
+						style="visibility: visible; animation-duration: 1.5s; animation-name: fadeIn;">
+						<div class="chapter_title">Comment ça marche ?</div>
+
+						<div class="chapter_body">Chaque jour l’enseigne de grande
+							distribution de votre choix met en vente un inventaire d’offres
+							exclusives et à prix réduit de produits dont la date de
+							péremption est proche. Vous bénéficiez de produits de marque,
+							frais et appétissants à petit prix, à consommer rapidement sans
+							modération.</div>
+					</div>
+				</div>
+			</div>
+			<br />
+			<div class="row">
+				<div class="col-md-12 center">
+					<p></p>
+				</div>
+				<div class="col-md-4">
+					<!-- begin single service item  style="width: 250px; height: 350px;" -->
+					<div class="service wow fadeInRight animated animated"
+						data-wow-offset="10"
+						style="visibility: visible; animation-name: fadeInRight;">
+						<img class="img_dim" src="assets/images/appscreen_01@2x.png"
+							alt="choisissez">
+						<div class="ccm_legend">Je choisis mon magasin pour accéder a
+							toutes ses offres</div>
+					</div>
+					<!-- end single service item -->
+				</div>
+				<div class="col-md-4">
+					<!-- begin single service item -->
+					<div class="service wow fadeInRight animated animated"
+						data-wow-offset="10"
+						style="visibility: visible; animation-name: fadeInRight;">
+						<img class="img_dim" src="assets/images/appscreen_02@2x.png"
+							alt="saisissez">
+
+						<div class="ccm_legend">Je sélectionne des offres exclusives
+							à prix réduit et je valide mon panier</div>
+					</div>
+					<!-- end single service item -->
+				</div>
+				<div class="col-md-4">
+					<!-- begin single service item -->
+					<div class="service wow fadeInRight animated delay animated"
+						data-wow-offset="10"
+						style="visibility: visible; animation-name: fadeInRight;">
+						<img class="img_dim" src="assets/images/appscreen_03@2x.png"
+							alt="deguster">
+						<div class="ccm_legend">Je récupère mes produits le soir
+							même en magasin: Clic & Collect</div>
+					</div>
+					<!-- end single service item -->
+				</div>
+			</div>
+			<div class="row feat_margin"></div>
+		</div>
+	</div>
+
+	<!-- ******************** FEATURES SECTION ******************** -->
+
+	<div class="features ">
+		<div class="container">
+			<div class="row feat_margin">
+				<div class="col-md-4">
+					<!-- begin single service item  style="width: 250px; height: 350px;" -->
+					<div class="service wow fadeInRight animated animated"
+						data-wow-offset="10"
+						style="visibility: visible; animation-name: fadeInRight;">
+						<img src="assets/images/picto 01.png" alt="choisissez">
+						<div class="row row_feat_margin"></div>
+						<div class="ccm_legend2">Faites des économies en profitant
+							de réductions exclusives !</div>
+					</div>
+					<!-- end single service item -->
+				</div>
+				<div class="col-md-4">
+					<!-- begin single service item -->
+					<div class="service wow fadeInRight animated animated"
+						data-wow-offset="10"
+						style="visibility: visible; animation-name: fadeInRight;">
+						<img src="assets/images/picto 02.png" alt="saisissez">
+						<div class="row row_feat_margin"></div>
+						<div class="ccm_legend2">Accédez à un catalogue de produits
+							frais autour de chez vous</div>
+
+						<!-- end single service item -->
+					</div>
+				</div>
+				<div class="col-md-4">
+					<!-- begin single service item -->
+					<div class="service wow fadeInRight animated delay animated"
+						data-wow-offset="10"
+						style="visibility: visible; animation-name: fadeInRight;">
+						<img src="assets/images/picto 03.png" alt="deguster">
+						<div class="row row_feat_margin"></div>
+						<div class="ccm_legend2">Paiement simple et sécurisé par
+							carte bancaire ou Paypal</div>
+
+						<!-- end single service item -->
+					</div>
+				</div>
+
+			</div>
+			<div class="row feat_margin">
+				<br /> <br />
+			</div>
+		</div>
+
+	</div>
+</div>
+<!--/container -->

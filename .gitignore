@@ -70,7 +70,7 @@ $RECYCLE.BIN/
 
 # dependencies
 /node_modules
-
+bower_components
 # IDEs and editors
 /.idea
 .project
@@ -102,3 +102,4 @@ testem.log
 #System Files
 .DS_Store
 Thumbs.db
+

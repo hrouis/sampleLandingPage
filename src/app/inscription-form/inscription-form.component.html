@@ -1,0 +1,58 @@
+<div id="bg"></div>
+
+
+<form (ngSubmit)="onSubmit() ">
+	<div class="form_container">
+		<div>
+			<img src="assets/images/inscription-txt.svg" />
+		</div>
+
+		<br />
+		<div class="form-group">
+			<label for=""></label> <input type="text" name="lastName"
+				placeholder="Nom" class="name, input_normal form-control" id=""
+				[(ngModel)]="prospect.lastName" required #lastName="ngModel">
+
+			<div [hidden]="lastName.valid || lastName.pristine"
+				class="alert alert-danger">merci de saisir votre nom</div>
+		</div>
+		<div class="form-group">
+			<label for=""></label> <input type="text" name="firstName" id=""
+				placeholder="Prénom" class="firstname, input_normal form-control"
+				[(ngModel)]="prospect.firstName" required #firstName="ngModel">
+			<div [hidden]="firstName.valid || firstName.pristine"
+				class="alert alert-danger">merci de saisir votre prénom</div>
+		</div>
+		<div class="form-group">
+			<label for=""></label> <input type="text" name="email" id=""
+				placeholder="Email" class="email input_normal form-control"
+				[(ngModel)]="prospect.email" required #email="ngModel"
+				pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$">
+			<div [hidden]="email.valid || email.pristine"
+				class="alert alert-danger">merci de saisir un email valide</div>
+		</div>
+		<div class="form-group">
+			<div class=" row ">
+				<input id="Registration_cb_CGV" [(ngModel)]="prospect.newsLetter"
+					name="newsLetter" type="checkbox" class="input_left roundedTwo"><div
+					 class="checkbox_label"> Je
+					souhaite recevoir la newsletter </div>
+			</div>
+		</div>
+		<div class="form-group">
+			<div class="g-recaptcha">
+				<recaptcha (resolved)="resolved($event)" size="normal"
+					siteKey="6Lc05RMUAAAAAE8G78AvhDNgOKhonkIqwZR9tXuQ"></recaptcha>
+			</div>
+		</div>
+		<div class="form-group">
+			<button type="submit" class="input_normal">
+				<strong class="button_txt">Je m'inscris</strong>
+			</button>
+		</div>
+		<!-- <div class="container"> -->
+
+		<!--  <a href="#" class="button facebook"><span><i class="fa fa-facebook"></i></span><p>Facebook</p></a> -->
+		<!-- </div> -->
+	</div>
+</form>

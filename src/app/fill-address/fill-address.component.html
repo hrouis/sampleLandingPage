@@ -1,0 +1,59 @@
+
+<div>
+	<main class="footercta" role="main">
+
+
+	<div class="container container-centered">
+
+		<h3>Renseignez votre adresse pour profiter de nos services près
+			de chez vous</h3>
+
+		<div class="center-block ">
+			<!-- class="col-md-10 col-sm-12 col-md-offset-1 subscribe" -->
+
+			<form #f="ngForm" (ngSubmit)="onSubmit() " class="form-horizontal"
+				role="form" id="subscribeForm" method="POST">
+				<div class="form-group ">
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2">
+							<input placeholder="search for location" autocorrect="off"
+								autocapitalize="off" spellcheck="off" type="text"
+								class="form-control input-lg input-normal" #search
+								[formControl]="searchControl" [(ngModel)]="adress">
+						</div>
+					</div>
+					<div class="row row_feat_margin"></div>
+
+					<div class="row">
+						<div class="center-block">
+							<button type="submit">
+								<strong>OK</strong>
+							</button>
+							<button type="submit">
+								<strong>Plus tard</strong>
+							</button>
+						</div>
+					</div>
+					<div class="row row_feat_margin" ></div>
+					<div class="row">
+				<div class="col-md-8 col-md-offset-2">
+					<sebm-google-map [latitude]="latitude" [longitude]="longitude"
+						[scrollwheel]="false" [zoom]="zoom"> <sebm-google-map-marker
+						[latitude]="latitude" [longitude]="longitude"></sebm-google-map-marker>
+					</sebm-google-map>
+				</div>
+			</div>
+				</div>
+			</form>
+			
+		</div>
+
+
+
+	</div>
+
+	</main>
+
+
+
+</div>
